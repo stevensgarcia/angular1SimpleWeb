@@ -1,3 +1,8 @@
+/**
+ * Service handler to request a list of services
+ * @param {Object} $scope Scope instance of the current controller
+ * @param {Object} ServiceFactory Factory object to make the request
+ */
 var services = function($scope, ServiceFactory) {
    ServiceFactory.getServices()
      .then(function(servicesList) {
@@ -7,6 +12,7 @@ var services = function($scope, ServiceFactory) {
 
 var app = angular.module('computer', ['ngRoute'])
 
+// Set routes
 .config(['$routeProvider', function($routeProvider) {
    $routeProvider
       .when('/main', {
@@ -32,6 +38,7 @@ var app = angular.module('computer', ['ngRoute'])
 
 .controller('MainCtrl', ['$scope', 'ServiceFactory', function($scope, ServiceFactory) {
    
+   // Get a list of services from local db
    services($scope, ServiceFactory);
 
 }])
@@ -41,7 +48,6 @@ var app = angular.module('computer', ['ngRoute'])
      getServices: function() {
         return $http.get('services.json')
            .then(function(response) {
-              console.log("Service response in ServiceFactory: ", response.data);
               return response.data;
            });
      }
@@ -51,11 +57,14 @@ var app = angular.module('computer', ['ngRoute'])
 
 .controller('ServiceCtrl', ['$scope', 'ServiceFactory', function($scope, ServiceFactory) {
 
+   // Get a list of services from local db
    services($scope, ServiceFactory);
 
 }])
 
 .controller('ContactCtrl', ['$scope', '$http', function($scope, $http) {
+  
+   // Get a list of locations in db
   $http.get('locations.json')
    .then(function(response) {
       $scope.locations = response.data;
