@@ -1,0 +1,42 @@
+img {
+   width: 100%;
+}
+.row .services {
+   padding-bottom: 24px;
+   border-bottom: 1px solid lightGray;
+}
+.services .col-md-2 img {
+   padding: 24px 0;
+   max-width: 200px;
+   margin: 0 auto;
+   width: 80%;
+}
+
+/**************************
+ =MEDIA QUERIES
+ **************************/
+ 
+@media (max-width: 1024px){
+  
+  .jumbotron img {
+     max-width: 600px;
+     margin: 0 auto;
+  } 
+
+}
+@media (min-width: 768px){
+  
+  .jumbotron img {
+     max-width: 300px;
+     margin: 0 auto;
+  } 
+
+}
+@media (max-width: 768px){
+  
+  .jumbotron img {
+     max-width: 250px;
+     margin: 0 auto;
+  } 
+
+}
