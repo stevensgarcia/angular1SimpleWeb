@@ -4,54 +4,17 @@
       <h2>Services</h2>
 
       <!-- Service item -->
-      <div class="row services">
-         <div class="col-md-2">
-            <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
-            style="" class="img-responsive" alt="">
-         </div>
-         <div class="col-md-10">
-            <h3>Hardware Repair</h3>
-            <p>
-            Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius
-            </p>
-            <a href="contact.html" class="btn btn-primary">Contact us
-               &raquo;</a>
-         </div>
-      </div>
-
-      <!-- Service item -->
-      <div class="row services">
-         <div class="col-md-2">
-            <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
-            style="" class="img-responsive" alt="">
-         </div>
-         <div class="col-md-10">
-            <h3>Hardware Repair</h3>
-            <p>
-            Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius
-            </p>
-            <a href="contact.html" class="btn btn-primary">Contact us
-               &raquo;</a>
-         </div>
-      </div>
-
-
-      <!-- Service item -->
-      <div class="row services">
-         <div class="col-md-2">
-            <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
-            style="" class="img-responsive" alt="">
-         </div>
-         <div class="col-md-10">
-            <h3>Hardware Repair</h3>
-            <p>
-            Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius
-            </p>
-            <a href="contact.html" class="btn btn-primary">Contact us
-               &raquo;</a>
+      <div ng-repeat="service in services">
+         <div class="row services">
+            <div class="col-md-2">
+               <img ng-src="{{service.image}}" style="" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-10">
+               <h3>{{service.name}}</h3>
+               <p>{{service.description}}</p>
+               <a href="#/contact" class="btn btn-primary">Contact us
+                  &raquo;</a>
+            </div>
          </div>
       </div>
 
