@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Hardware Repair",
+    "description": "Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
+  },
+  {
+    "id": 2,
+    "name": "Virus Removal",
+    "description": "Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
+  },
+  {
+    "id": 3,
+    "name": "System Tuneup",
+    "description": "Ipsum eaque delectus reiciendis laudantium animi? Rerum consectetur molestiae cupiditate expedita alias molestias harum, porro! Enim iure beatae placeat eius",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png"
+  }
+]
